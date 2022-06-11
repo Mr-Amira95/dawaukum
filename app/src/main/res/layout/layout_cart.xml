@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_layout"
+    android:layout_marginBottom="15dp"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/drug_img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@color/hint_color"/>
+
+    <TextView
+        android:id="@+id/drug_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/drug_img"
+        app:layout_constraintEnd_toStartOf="@id/decrease_icon"
+        android:text="Drug Name"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <TextView
+        android:id="@+id/drug_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/drug_img"
+        app:layout_constraintEnd_toStartOf="@id/decrease_icon"
+        app:layout_constraintTop_toBottomOf="@id/drug_name"
+        android:layout_marginTop="5dp"
+        android:text="00,00 JDs"
+        android:textColor="@color/txt_color"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <TextView
+        android:id="@+id/need_prescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/drug_img"
+        app:layout_constraintEnd_toStartOf="@id/decrease_icon"
+        app:layout_constraintTop_toBottomOf="@id/drug_price"
+        android:layout_marginTop="5dp"
+        android:text="* Need Prescription"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="10dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/delete_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_delete"/>
+
+    <ImageView
+        android:id="@+id/decrease_icon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_remove_circle"
+        app:layout_constraintEnd_toStartOf="@id/delete_icon"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="1"
+        android:textColor="@color/txt_color"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:background="@color/white"
+        android:paddingVertical="10dp"
+        android:inputType="number"
+        android:focusable="false"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@id/decrease_icon"
+        app:layout_constraintBottom_toTopOf="@id/increase_icon"
+        app:layout_constraintStart_toStartOf="@id/increase_icon"
+        app:layout_constraintEnd_toEndOf="@id/increase_icon"/>
+
+    <ImageView
+        android:id="@+id/increase_icon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_add_circle"
+        app:layout_constraintEnd_toStartOf="@id/delete_icon"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="hint_color">#DCDCDC</color>
+    <color name="primary_color">#4485C5</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="red">#FF0000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="txt_color">#49626A</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Dawaukum</string>
+    <string name="default_web_client_id" translatable="false">667172752302-p6kv71cn0b89nvlbgskpea9qcu1q8oe0.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">667172752302</string>
+    <string name="google_api_key" translatable="false">AIzaSyAjhbDjSDj5fpoWVVr-LIB5uZnDWsxkObE</string>
+    <string name="google_app_id" translatable="false">1:667172752302:android:b5c6412744f3e6e619d63f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAjhbDjSDj5fpoWVVr-LIB5uZnDWsxkObE</string>
+    <string name="google_storage_bucket" translatable="false">dawaukum.appspot.com</string>
+    <string name="project_id" translatable="false">dawaukum</string>
+    <style name="Theme.Dawaukum" parent="Theme.MaterialComponents.NoActionBar">
+        
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/primary_color</item>
+        <item name="colorSecondaryVariant">@color/primary_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

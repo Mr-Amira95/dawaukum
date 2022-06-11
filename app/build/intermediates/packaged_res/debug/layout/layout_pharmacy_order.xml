@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_layout"
+    android:layout_marginBottom="15dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="25dp">
+
+    <TextView
+        android:id="@+id/order_number_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Order Number"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/order_number_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/order_number_title"
+        app:layout_constraintBottom_toBottomOf="@id/order_number_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="0000000000"
+        android:textColor="@color/txt_color"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/status_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/order_number_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Order Status"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <Spinner
+        android:id="@+id/status_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/status_title"
+        app:layout_constraintBottom_toBottomOf="@id/status_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/txt_color"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/user_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/status_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="User Name"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/user_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/user_title"
+        app:layout_constraintBottom_toBottomOf="@id/user_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Username"
+        android:textColor="@color/txt_color"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/address_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/user_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="User Address"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/address_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/address_title"
+        app:layout_constraintBottom_toBottomOf="@id/address_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Address"
+        android:textColor="@color/txt_color"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/gender_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/address_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="User Gender"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/gender_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/gender_title"
+        app:layout_constraintBottom_toBottomOf="@id/gender_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Male"
+        android:textColor="@color/txt_color"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/total_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gender_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Total"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/total_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/total_title"
+        app:layout_constraintBottom_toBottomOf="@id/total_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="00,00 JDs"
+        android:textColor="@color/txt_color"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/order_items_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/total_title"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        tools:itemCount="3"
+        tools:listitem="@layout/layout_order_item"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Order"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order_items_recyclerview"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
